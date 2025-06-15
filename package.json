@@ -2,14 +2,18 @@
   "name": "tg-timer-bot",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "index.ts",
   "scripts": {
+    "start": "ts-node ./index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "grammy": "^1.36.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
