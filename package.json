@@ -7,7 +7,8 @@
   "scripts": {
     "compile": "tsc",
     "watch": "tsc -w",
-    "start": "node --env-file=.env ./dist/index.js",
+    "start": "node --env-file=.env --watch ./dist/index.js",
+    "dev": "tsc -w & node --env-file=.env ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
