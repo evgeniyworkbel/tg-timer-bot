@@ -2,14 +2,14 @@
 
 import { Bot } from "grammy";
 
-// Create a bot object
-const bot = new Bot(process.env.BOT_TOKEN ?? ""); // <-- place your bot token in this string
+const token = process.env.BOT_TOKEN;
+if (!token) throw new Error("BOT_TOKEN is unset");
 
-// Register listeners to handle messages
+const bot = new Bot(token);
+
 bot.on("message:text", (ctx) => {
 //   console.log(ctx);
   ctx.reply("Echo: " + ctx.message.text);
 });
 
-// Start the bot (using long polling)
 bot.start();
