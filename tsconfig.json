@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "noEmit": true
-  }
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  },
 }
